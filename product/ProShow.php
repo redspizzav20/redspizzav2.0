@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 	$product 	= new Product();
 	$data		= $product->getRating();
 	$data1 		= $product->getLimit('112');
@@ -52,7 +52,7 @@
             <?php
 		}
 	?>
-    <div class="view" style="float:right"><a href="index.php?mod=product&detail=hot">Xem thêm</a></div>  
+    <div class="view" style="float:right"><a href="index.php?mod=product&detail=hot">Xem thêm</a></div>  //da sua loi tai day
 </div>
 <div class="clear"></div>
 <div class="product-menu">
