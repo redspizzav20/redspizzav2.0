@@ -17,7 +17,7 @@ if ($u !="" && $p !="")
 	}
 	else
 	{
-		echo "Nhập sai thông tin!";	
+		echo "Nhập sai thông tin!"; \\ đã sữa file này!	
 	}
 	?>
 
