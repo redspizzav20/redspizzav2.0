@@ -117,12 +117,14 @@
 										foreach($_SESSION['cart'] as $pro_id=>$quantity)
 										{
 											$sql="SELECT * FROM products where ProductID = '$pro_id' ";
-											$data = $db->Selectquery($sql);
+											$data2 = $db->Selectquery($sql);
+                                            // nguyen nhan them 1 lan gio hang la do trung bien $data nen khi thuc hien se gui 2 lan.
+                                            // Gio ta chi can thay cho khac bien.
 										?>
                   						<li class="clearfix">
-                                    		 <img src="images/products/<?php echo $data[0]["Image"];?>" />
-                                    		 <span class="item-name"><?php echo $data[0]["ProductName"];?></span>
-                                   			 <span class="item-price">Giá: <?php echo number_format($sumdetail=($data[0]["PriceS"]*$quantity));?> VND</span>
+                                    		 <img src="images/products/<?php echo $data2[0]["Image"];?>" />
+                                    		 <span class="item-name"><?php echo $data2[0]["ProductName"];?></span>
+                                   			 <span class="item-price">Giá: <?php echo number_format($sumdetail=($data2[0]["PriceS"]*$quantity));?> VND</span>
                                     		 <span class="item-quantity">Số lượng: <?php echo $quantity;?></span>
                   						</li>
                                         <?php $sum +=$sumdetail;?>
