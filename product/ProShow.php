@@ -76,7 +76,7 @@
                                                 	<li><a class="link-quickview" href="#">Thông Tin</a></li>
                                             	</ul>
                                         </div>
-                                </div>
+                                </div>//day la file sua loi cua toi roi nhe hahahahhahahah
                                 <div class="des-container">
                                 	<h2 class="product-name"><a href="#" title="Pizza hai san"><?php echo $row['ProductName'];?></a></h2>
                                     <div class="price-box">
